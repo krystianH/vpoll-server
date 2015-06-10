@@ -10,6 +10,8 @@ io.on('connection', function(socket){
   console.log('a user connected');
 });
 
-http.listen(3000, function(){
-  console.log('listening on *:3000');
+var port = process.env.PORT || 3000;
+
+http.listen(port, function(){
+  console.log('listening on *:'+port);
 });
