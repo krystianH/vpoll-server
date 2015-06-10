@@ -1,0 +1,19 @@
+{
+  "name": "vpoll-server",
+  "version": "0.1.0",
+  "description": "serverside vpoll",
+  "main": "server.js",
+  "scripts": {
+    "test": "null"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krystianH/vpoll-server.git"
+  },
+  "author": "mtgx",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/krystianH/vpoll-server/issues"
+  },
+  "homepage": "https://github.com/krystianH/vpoll-server"
+}
