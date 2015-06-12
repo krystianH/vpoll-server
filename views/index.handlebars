@@ -3,16 +3,16 @@
 <head>
   <title>MTGx vPollPlayer</title>
 
-  <!-- vPollPlayer assets -->
+  <!-- include vPollPlayer assets -->
   <script src="poll-player.js"></script>
 
+  <!-- init vPollPlayer -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       window.player = vPollPlayer('test-video', {
         socketUrl: ':{{port}}/'
       });
     }, false);
-
   </script>
 </head>
 <body>
