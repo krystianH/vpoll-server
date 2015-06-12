@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MTGx vPollPlayer</title>
+
+  <!-- include vPollPlayer assets -->
+  <script src="poll-player.js"></script>
+
+  <!-- init vPollPlayer -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      window.player = vPollPlayer('test-video', {
+        socketUrl: ':{{port}}/'
+      });
+    }, false);
+  </script>
+</head>
+<body>
+  <video id="test-video" class="video-js vjs-default-skin" controls preload="none" width="800" height="450" poster="http://video-js.zencoder.com/oceans-clip.png">
+    <source src="http://video-js.zencoder.com/oceans-clip.mp4" type="video/mp4" />
+    <source src="http://video-js.zencoder.com/oceans-clip.webm" type="video/webm" />
+    <source src="http://video-js.zencoder.com/oceans-clip.ogv" type="video/ogg" />
+    <track kind="captions" src="node_modules/video.js/dist/video-js/demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+    <track kind="subtitles" src="node_modules/video.js/dist/video-js/demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+    <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+  </video>
+</body>
+</html>
